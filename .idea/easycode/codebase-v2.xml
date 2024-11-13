@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project version="4">
-  <component name="com.obiscr.chatgpt.settings.EasyCodeState">
-    <option name="projectFiles" value="$PROJECT_DIR$/src/main/java/org/example/Main.java;/Users/umitkaynak/Desktop/Dias_Web-Api/UmitKaynak/src/test/java/uiautomation/base/BaseTest.java;/Users/umitkaynak/Desktop/Dias_Web-Api/UmitKaynak/src/test/java/uiautomation/base/Drivers.java;/Users/umitkaynak/Desktop/Dias_Web-Api/UmitKaynak/src/test/java/uiautomation/basesteps/BaseSteps.java;/Users/umitkaynak/Desktop/Dias_Web-Api/UmitKaynak/src/test/java/uiautomation/pages/MainPage.java;/Users/umitkaynak/Desktop/Dias_Web-Api/UmitKaynak/src/test/java/uiautomation/stepdefinitions/CommonStepDefinitions.java;/Users/umitkaynak/Desktop/Dias_Web-Api/UmitKaynak/src/test/java/uiautomation/utils/ConfigReader.java;/Users/umitkaynak/Desktop/Dias_Web-Api/UmitKaynak/src/test/java/uiautomation/utils/LoggerManager.java;/Users/umitkaynak/Desktop/Dias_Web-Api/UmitKaynak/src/test/java/uiautomation/utils/PageElementFinder.java;/Users/umitkaynak/Desktop/Dias_Web-Api/UmitKaynak/src/test/java/uiautomation/CucumberRunner.java;/Users/umitkaynak/Desktop/Dias_Web-Api/UmitKaynak/pom.xml" />
-  </component>
-</project>
