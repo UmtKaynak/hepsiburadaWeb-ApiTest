@@ -217,14 +217,4 @@ public class BaseSteps {
         driver.navigate().refresh();
     }
 
-    public void waitByMilliSeconds(int milliseconds) {
-        logger.info("Entered.");
-        try {
-            Thread.sleep(milliseconds);
-        } catch (InterruptedException e) {
-            Thread.currentThread().interrupt();
-            e.printStackTrace();
-        }
-    }
-
 }
