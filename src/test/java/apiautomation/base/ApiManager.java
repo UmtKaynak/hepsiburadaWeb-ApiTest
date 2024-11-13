@@ -8,6 +8,11 @@ import static io.restassured.RestAssured.given;
 
 public class ApiManager extends BaseTest {
 
+    /**
+     * This class is created to reduce code repetition.
+     * Major requests are located here.
+     *
+     */
 
     protected BookingResponseModel sendBookingRequest(BookingRequestModel bookingRequestModel) {
         Response response = given(spec)

@@ -5,7 +5,6 @@ import static uiautomation.pages.HomePage.PRODUCT_COUNT_IN_THE_CART;
 
 public class CartPageSteps extends BaseSteps {
 
-
     public void cartPagePriceControl() {
         logger.info("Entered.");
         comparePrices(CART_PRICE);

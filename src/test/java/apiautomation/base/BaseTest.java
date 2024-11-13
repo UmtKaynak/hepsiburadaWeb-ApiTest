@@ -10,6 +10,11 @@ import org.junit.jupiter.api.BeforeAll;
 public class BaseTest {
    public static RequestSpecification spec;
 
+    /**
+     * Spec is used for the pointed URl and set filter type
+     */
+
+
     @BeforeAll
     public static void setup() {
         spec = new RequestSpecBuilder()

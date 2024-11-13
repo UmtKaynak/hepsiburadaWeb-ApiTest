@@ -15,3 +15,4 @@ Project is coded Java-Restassured-junit
 - [pojos](#Request and Response body method composed as json )
 - [test](#Scenarios is located on this part)
 
+Note: By typing 'allure serve allure-results' in the terminal, the user can view the report.

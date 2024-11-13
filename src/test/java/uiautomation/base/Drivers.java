@@ -15,6 +15,13 @@ import java.util.Map;
 
 public enum Drivers {
 
+    /**
+     * this class is created as an enum, and it works by setting and returning the browser according to the invoked browser.
+     *
+     *
+     */
+
+
     CHROME {
         @Override
         public RemoteWebDriver browserConfigureOptions() {
