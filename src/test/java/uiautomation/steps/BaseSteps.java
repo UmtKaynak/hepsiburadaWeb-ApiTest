@@ -1,11 +1,9 @@
 package uiautomation.steps;
 
 import org.junit.jupiter.api.Assertions;
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import uiautomation.base.BaseTest;
@@ -21,7 +19,6 @@ import static uiautomation.utils.PageElementFinder.getElement;
 
 public class BaseSteps {
     protected WebDriver driver;
-    protected WebDriverWait wait;
     protected LoggerManager logger;
     protected HashMap<String, Double> savedValues;
 
@@ -30,7 +27,6 @@ public class BaseSteps {
         this.driver = BaseTest.driver;
         this.logger = BaseTest.logger;
         this.savedValues = BaseTest.savedValues;
-        this.wait = new WebDriverWait(driver, Duration.ofSeconds(5));
     }
 
     public void getUrl(String url) {
@@ -56,12 +52,11 @@ public class BaseSteps {
 
     public WebElement findElement(By key) {
         logger.info("Entered.");
-        wait.until(ExpectedConditions.visibilityOfElementLocated(key));
+        WebDriverWait webDriverWait = new WebDriverWait(driver, Duration.ofSeconds(5));
+        webDriverWait.until(ExpectedConditions.visibilityOfElementLocated(key));
         logger.info("Element located by " + key + " found.");
         WebElement element = driver.findElement(key);
-        ((JavascriptExecutor) driver).executeScript(
-                "arguments[0].scrollIntoView({behavior: 'smooth', block: 'center', inline: 'center'})",
-                element);
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView({behavior: 'smooth', block: 'center', inline: 'center'})", element);
         return element;
     }
 

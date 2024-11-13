@@ -3,7 +3,7 @@ Feature:CartPageTestScenarios
   Background:
     Given Select Browser As "chrome"
     When User get "https://www.hepsiburada.com/" address
-    And User can displayed "ACCEPT_COOKIE_BUTTON" on the "HomePage" page
+    And User clicks the "ACCEPT_COOKIE_BUTTON" element is displayed on the "HomePage" page
     When User checks that the cart is empty
 
   @Test

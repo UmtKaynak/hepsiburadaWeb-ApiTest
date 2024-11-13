@@ -23,7 +23,7 @@ public class CommonStepDefinitions {
         baseSteps.focusTabWithNumber(tabIndex);
     }
 
-    @And("User can displayed {string} on the {string} page")
+    @And("User clicks the {string} element is displayed on the {string} page")
     public void userCanDisplayedOnThePage(String elementName, String pageName) {
         logger.info("Entered.");
         baseSteps.isDiplayedClickElement(elementName, pageName);
